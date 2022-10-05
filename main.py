@@ -1,7 +1,7 @@
 # -----------------------------------------------------------
 # This class represents a directed graph implemented through
-# an adjacency list. Choices and remarks are provided in a
-# separated document (README file).
+# an adjacency list. The instructions, observations and remarks 
+# are provided in a separated document (README file).
 #
 # The tests are (in order):
 #   1. Constructing the directed graph using a list of vertices
