@@ -1,5 +1,5 @@
 # AIlly-challenge
-Tech challenge for AIlly
+Tech challenge for AIlly interview
 
 ## Instructions
 ![image](https://user-images.githubusercontent.com/38657416/193954516-5aaf6ed9-71a3-41d4-a5e4-4bdf20420f3b.png)
