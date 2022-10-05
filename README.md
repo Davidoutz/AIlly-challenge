@@ -27,11 +27,10 @@ graph = {
 We can construct the adjacency list from those inputs basically in 2 steps. At first, we loop through the vertices list and add in the dictionary all the elements as keys. We need to do that because the list of edges might not contain all the existing vertices. Then we lop through the edges list and, considering that an edge is a tuple (v, u) which means “vertex v had a direction to u”, we append `u` to the current values of `dict[v]`.
 
 ## Compute the number of edges:
-The total number of edges is equal to the count of all the elements in any of the dictionary values (here 3). This is linear time O(n) where n is the number of vertices.
+The total number of edges is equal to the count of all the elements in any of the dictionary values (here 3).
 
 ## Compute the number of vertices:
-The total number of vertices is equal to the count of the dictionary keys (here 4).
-This is constant time O(1).
+The total number of vertices is equal to the count of the dictionary elements (here 4).
 
 ## Compute the in degrees per vertex:
 The in degree of a vertex is equal to the count of its occurrence in any of the dictionary values
@@ -40,7 +39,7 @@ Here we can use a second dictionary to track the occurrences while looping throu
 
 ## Compute the out degrees per vertex:
 The out degree of a vertex is equal to the count of the items in its value
-For example, out degree of vertex `a` is simply equal to `len(graph[“a”])=2` which is basically constant time.
+For example, out degree of vertex `a` is simply equal to `len(graph[“a”])=2`.
 
 ## Serializatoin/Deserialization
 For the serialization/deserialization part, I’ve chosen to use json format which is human readable and can easily be shared with other applications/platforms. It makes sens to me as we want to simply store a dictionary. This will be converted into a json object behind the scene. The main thing to pay attention is to release the file once we are done with it.
