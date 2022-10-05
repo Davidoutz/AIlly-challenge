@@ -48,7 +48,8 @@ class DirectedGraph:
         print("Compute in degrees per vertex:")
         count_track = {}
         for key, value in self.adjacency_list.items():
-            if key not in count_track:  # In case a vertex is not in the dict values, we still need to track its count to 0
+            # When the key is not yet tracked, we track it - otherwise we could miss its count (if 0)
+            if key not in count_track:  
                 count_track[key] = 0
             for vertex in value:
                 if vertex in count_track:
@@ -70,7 +71,9 @@ class DirectedGraph:
 
     def deserialize(self):
         print("deserializing...")
-        if not (os.path.isfile(DirectedGraph.FILE_NAME) and os.access(DirectedGraph.FILE_NAME, os.R_OK)): # empty Json file creation if missing
+        
+        # empty Json file creation if missing
+        if not (os.path.isfile(DirectedGraph.FILE_NAME) and os.access(DirectedGraph.FILE_NAME, os.R_OK)): 
             with open(DirectedGraph.FILE_NAME, "w") as file:
                 file.write(json.dumps({}))
 
@@ -80,7 +83,9 @@ class DirectedGraph:
 
     def add_edge(self, edge):
         v, u = edge
-        if u in self.adjacency_list[v]:  # ignore if edge already exists in adjacency list
+        
+        # ignore if edge already exists in adjacency list
+        if u in self.adjacency_list[v]:  
             return
         self.adjacency_list[v].append(u)
 
