@@ -50,6 +50,6 @@ For the serialization/deserialization part, I’ve chosen to use json format whi
 
 Some basic checks are needed in order to avoid random crashes such as checking if the file exist before writing to it, or if a vertex is already set in the adjacency list before trying to append an element to its values.
 
-For my own tests, I have added an extra method to add an edge to the current graph. This allowed me to compare the adjacency list before and after adding new edges.
+For my own tests, I have added an extra method to add an edge to the current graph and one for outputting the dictionary. This allowed me to compare the adjacency list before and after adding new edges.
 
 
