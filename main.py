@@ -69,8 +69,7 @@ class DirectedGraph:
 
     def deserialize(self):
         print("deserializing...")
-        # Sanity check if file does not exist
-        if not (os.path.isfile(DirectedGraph.FILE_NAME) and os.access(DirectedGraph.FILE_NAME, os.R_OK)):
+        if not (os.path.isfile(DirectedGraph.FILE_NAME) and os.access(DirectedGraph.FILE_NAME, os.R_OK)): # empty Json file creation if missing
             with open(DirectedGraph.FILE_NAME, "w") as file:
                 file.write(json.dumps({}))
 
