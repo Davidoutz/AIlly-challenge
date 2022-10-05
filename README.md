@@ -4,13 +4,15 @@ Tech challenge for AIlly
 ## Instructions
 ![image](https://user-images.githubusercontent.com/38657416/193952455-87b8e6c3-246c-4447-acd7-eeb23667f6cf.png)
 
+## Code
+The code is located in the file main.py and can be run anywhere using python3 (probably even python2 should work).
 
 ## Observations 
 The graph is directed and unweighted. In order to represent such graph, we can easily implement an adjacency list and construct it from both list of vertices and list of edges. Also an adjacency list should cover all the use cases asked for the challenge. For efficiency, typically we need to store this list in a hashmap. As a benefit, we can mention the constant time access O(1) on the vertex elements.
 
 The graph should be constructed from two inputs (here chosen randomly):
-1.A list of vertices, example: `[“a”, “b”, “c”, “d”]`
-2.A list of edges, example: `[(“a”, “b”), (“a”, “c”), (“c”, “d”)]`
+ - A list of vertices, example: `[“a”, “b”, “c”, “d”]`
+ - A list of edges, example: `[(“a”, “b”), (“a”, “c”), (“c”, “d”)]`
 
 Visual représentation of the sample graph:
 ![image](https://user-images.githubusercontent.com/38657416/193952510-583c37f8-2cc1-465c-8c4a-e1331b47aaec.png)
@@ -18,10 +20,10 @@ Visual représentation of the sample graph:
 The adjacency list is a key-value pair where the key is a vertex and the value is a list of vertex directly reachable from it. Note that if a vertex has an out degree equals to 0, we still need to track it and its value should remain an empty list -> `[]`.
 ```
 graph = {
-a: [‘b’, ‘c’], 
-b: [],
-c: [‘d’],
-d: []
+  a: [‘b’, ‘c’], 
+  b: [],
+  c: [‘d’],
+  d: []
 }
 ```
 ## Construct from the inputs:
