@@ -25,6 +25,7 @@ class DirectedGraph:
 
     def __init__(self, vertices, edges):
         self.adjacency_list = {}
+        # construction of the adjacency list, see readme file 
         for vertex in vertices:
             self.adjacency_list[vertex] = []
         for source, destination in edges:
