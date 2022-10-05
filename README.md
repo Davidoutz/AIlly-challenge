@@ -55,7 +55,7 @@ The code is located in the file main.py and can be run using python3.
 `$python3 main.py`
 
 ## Sample execution
-![image](https://user-images.githubusercontent.com/38657416/193962934-aec71515-01f1-43f5-b3b6-ddf746143f8c.png)
+![image](https://user-images.githubusercontent.com/38657416/193962934-aec71515-01f1-43f5-b3b6-ddf746143f8c.png) 
 
 
 
