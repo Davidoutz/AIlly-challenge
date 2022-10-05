@@ -2,7 +2,7 @@
 Tech challenge for AIlly
 
 ## Instructions
-![image](https://user-images.githubusercontent.com/38657416/193952455-87b8e6c3-246c-4447-acd7-eeb23667f6cf.png)
+![image](https://user-images.githubusercontent.com/38657416/193954516-5aaf6ed9-71a3-41d4-a5e4-4bdf20420f3b.png)
 
 ## Code
 The code is located in the file main.py and can be run anywhere using python3 (probably even python2 should work).
