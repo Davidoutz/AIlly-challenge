@@ -74,7 +74,7 @@ class DirectedGraph:
 
         with open("adjacency_list.json", "r") as file:
             self.adjacency_list = json.load(file)
-
+        self.print()
 
     def add_edge(self, edge):
         v, u = edge
@@ -91,21 +91,16 @@ if __name__ == '__main__':
     graph.compute_vertices()
     graph.compute_in_degree()
     graph.compute_out_degree()
-    graph.serialize()    
+    graph.serialize()
     graph.deserialize()
-    
-    
-    
+
     # Extra tests after adding a new edge
-    #print("##########################")
-    #print("# Adding new edge (b, d) #")
-    #print("##########################")
-    #graph.add_edge(("b", "d"))
-    #graph.compute_edges()
-    #graph.compute_vertices()
-    #graph.compute_in_degree()
-    #graph.compute_out_degree()
-    #graph.print()
-
-
-
+    # print("##########################")
+    # print("# Adding new edge (b, d) #")
+    # print("##########################")
+    # graph.add_edge(("b", "d"))
+    # graph.compute_edges()
+    # graph.compute_vertices()
+    # graph.compute_in_degree()
+    # graph.compute_out_degree()
+    # graph.print()
