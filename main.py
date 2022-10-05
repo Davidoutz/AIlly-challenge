@@ -63,10 +63,12 @@ class DirectedGraph:
             print(key, "->", len(value))
 
     def serialize(self):
+        print("serializing...")
         with open(DirectedGraph.FILE_NAME, "w") as file:
             json.dump(self.adjacency_list, file)
 
     def deserialize(self):
+        print("deserializing...")
         # Sanity check if file does not exist
         if not (os.path.isfile(DirectedGraph.FILE_NAME) and os.access(DirectedGraph.FILE_NAME, os.R_OK)):
             with open(DirectedGraph.FILE_NAME, "w") as file:
@@ -94,6 +96,8 @@ if __name__ == '__main__':
     graph.serialize()
     graph.deserialize()
 
+    
+    
     # Extra tests after adding a new edge
     # print("##########################")
     # print("# Adding new edge (b, d) #")
