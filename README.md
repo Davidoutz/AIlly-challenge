@@ -4,9 +4,6 @@ Tech challenge for AIlly
 ## Instructions
 ![image](https://user-images.githubusercontent.com/38657416/193954516-5aaf6ed9-71a3-41d4-a5e4-4bdf20420f3b.png)
 
-## Code
-The code is located in the file main.py and can be run anywhere using python3 (probably even python2 should work).
-
 ## Observations 
 The graph is directed and unweighted. In order to represent such graph, we can easily implement an adjacency list and construct it from both list of vertices and list of edges. Also an adjacency list should cover all the use cases asked for the challenge. For efficiency, typically we need to store this list in a hashmap. As a benefit, we can mention the constant time access O(1) on the vertex elements.
 
@@ -52,7 +49,13 @@ Some basic checks are needed in order to avoid random crashes such as checking i
 
 For my own tests, I have added an extra method to add an edge to the current graph and one for outputting the dictionary. This allowed me to compare the adjacency list before and after adding new edges.
 
+## Code
+The code is located in the file main.py and can be run using python3.
+
+`$python3 main.py`
+
 ## Sample execution
-![image](https://user-images.githubusercontent.com/38657416/193957259-e6763ba9-f0a9-4130-99a6-f1245e3d381e.png)
+![image](https://user-images.githubusercontent.com/38657416/193962934-aec71515-01f1-43f5-b3b6-ddf746143f8c.png)
+
 
 
