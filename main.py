@@ -14,7 +14,7 @@
 #   7. Desearialize from a file
 #
 # 2022 / David Beauverd
-# Ailly coding challenge
+# Ailly coding challenge 
 # -----------------------------------------------------------
 import json
 import os
