@@ -98,13 +98,13 @@ if __name__ == '__main__':
 
     
     
+    # ####
     # Extra tests after adding a new edge
-    # print("##########################")
-    # print("# Adding new edge (b, d) #")
-    # print("##########################")
+    # ####
     # graph.add_edge(("b", "d"))
     # graph.compute_edges()
     # graph.compute_vertices()
     # graph.compute_in_degree()
     # graph.compute_out_degree()
-    # graph.print()
+    # graph.serialize()
+    # graph.deserialize()
