@@ -52,4 +52,7 @@ Some basic checks are needed in order to avoid random crashes such as checking i
 
 For my own tests, I have added an extra method to add an edge to the current graph and one for outputting the dictionary. This allowed me to compare the adjacency list before and after adding new edges.
 
+## Sample execution
+![image](https://user-images.githubusercontent.com/38657416/193957259-e6763ba9-f0a9-4130-99a6-f1245e3d381e.png)
+
 
